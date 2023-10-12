@@ -1,0 +1,25 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .    # Direktori konteks, yaitu direktori tempat Dockerfile berada
+    image: laravel-app
+    container_name: laravel-app
+    ports:
+      - "8080:80"  # Terjemahkan port 8080 host ke port 80 kontainer
+    volumes:
+      - .:/var/www/html  # Membagikan direktori proyek Anda ke kontainer
+    depends_on:
+      - db
+
+  db:
+    image: mysql:5.7
+    container_name: laravel-db
+    environment:
+      MYSQL_ROOT_PASSWORD: your_password
+      MYSQL_DATABASE: your_database
+    volumes:
+      - db-data:/var/lib/mysql
+
+volumes:
+  db-data:

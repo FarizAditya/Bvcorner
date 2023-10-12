@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>bvc</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="{{ asset('themes/ezone/assets/img/favicon.png') }}">
+        <!-- <link rel="shortcut icon" type="image/x-icon" href="{{ asset('themes/ezone/assets/img/favicon.png') }}"> -->
 		
 		<!-- all css here -->
         <link rel="stylesheet" href="{{ asset('themes/ezone/assets/css/bootstrap.min.css') }}">
@@ -26,6 +26,7 @@
 
         <!-- CSRF Token -->
 		<meta name="csrf-token" content="{{ csrf_token() }}">
+        @laravelPWA
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -45,78 +46,23 @@
                         <div class="menu-style-2 furniture-menu menu-hover">
                             <nav>
                                 <ul>
-                                    <li><a href="/">home</a>
-                                        <ul class="single-dropdown">
-                                            <li><a href="index.html">Fashion</a></li>
-                                            <li><a href="index-fashion-2.html">Fashion style 2</a></li>
-                                            <li><a href="index-fruits.html">fruits</a></li>
-                                            <li><a href="index-book.html">book</a></li>
-                                            <li><a href="index-electronics.html">electronics</a></li>
-                                            <li><a href="index-electronics-2.html">electronics style 2</a></li>
-                                            <li><a href="index-food.html">food & drink</a></li>
-                                            <li><a href="index-furniture.html">furniture</a></li>
-                                            <li><a href="index-handicraft.html">handicraft</a></li>
-                                            <li><a target="_blank" href="index-smart-watch.html">smart watch</a></li>
-                                            <li><a href="index-sports.html">sports</a></li>
-                                        </ul>
+                                    <li><a href="/">home</a>                                      
                                     </li>
                                     <li><a href="#">pages</a>
                                         <ul class="single-dropdown">
                                             <li><a href="about-us.html">about us</a></li>
-                                            <li><a href="menu-list.html">menu list</a></li>
-                                            <li><a href="login.html">login</a></li>
-                                            <li><a href="register.html">register</a></li>
-                                            <li><a href="cart.html">cart page</a></li>
-                                            <li><a href="checkout.html">checkout</a></li>
-                                            <li><a href="wishlist.html">wishlist</a></li>
+                                            <li><a href="{{ url('products') }}">Products</a></li>
+                                            <li><a href="{{ url('login') }}">login</a></li>
+                                            <li><a href="{{ url('register') }}">register</a></li>
+                                            <li><a href="{{ url('carts') }}">cart page</a></li>
+                                            <li><a href="{{ url('wishlists') }}">wishlist</a></li>
                                             <li><a href="contact.html">contact</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="{{ url('products') }}">shop</a>
-                                        <div class="category-menu-dropdown shop-menu">
-                                            <div class="category-dropdown-style category-common2 mb-30">
-                                                <h4 class="categories-subtitle"> shop layout</h4>
-                                                <ul>
-                                                    <li><a href="shop-grid-2-col.html"> grid 2 column</a></li>
-                                                    <li><a href="shop-grid-3-col.html"> grid 3 column</a></li>
-                                                    <li><a href="shop.html">grid 4 column</a></li>
-                                                    <li><a href="shop-grid-box.html">grid box style</a></li>
-                                                    <li><a href="shop-list-1-col.html"> list 1 column</a></li>
-                                                    <li><a href="shop-list-2-col.html">list 2 column</a></li>
-                                                    <li><a href="shop-list-box.html">list box style</a></li>
-                                                    <li><a href="cart.html">shopping cart</a></li>
-                                                    <li><a href="wishlist.html">wishlist</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="category-dropdown-style category-common2 mb-30">
-                                                <h4 class="categories-subtitle"> product details</h4>
-                                                <ul>
-                                                    <li><a href="product-details.html">tab style 1</a></li>
-                                                    <li><a href="product-details-2.html">tab style 2</a></li>
-                                                    <li><a href="product-details-3.html"> tab style 3</a></li>
-                                                    <li><a href="product-details-4.html">sticky style</a></li>
-                                                    <li><a href="product-details-5.html">sticky style 2</a></li>
-                                                    <li><a href="product-details-6.html">gallery style</a></li>
-                                                    <li><a href="product-details-7.html">gallery style 2</a></li>
-                                                    <li><a href="product-details-8.html">fixed image style</a></li>
-                                                    <li><a href="product-details-9.html">fixed image style 2</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="mega-banner-img">
-                                                <a href="single-product.html">
-                                                    <img src="{{ asset('themes/ezone/assets/img/banner/18.jpg') }}" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
+                                        
                                     </li>
-                                    <li><a href="blog.html">blog</a>
-                                        <ul class="single-dropdown">
-                                            <li><a href="blog.html">blog 3 colunm</a></li>
-                                            <li><a href="blog-2-col.html">blog 2 colunm</a></li>
-                                            <li><a href="blog-sidebar.html">blog sidebar</a></li>
-                                            <li><a href="blog-details.html">blog details</a></li>
-                                            <li><a href="blog-details-sidebar.html">blog details 2</a></li>
-                                        </ul>
+                                    <li><a href="blog.html">blog</a>                                       
                                     </li>
                                     <li><a href="contact.html">contact</a></li>
                                 </ul>
@@ -126,41 +72,7 @@
                             <a class="icon-cart-furniture" href="{{ url('carts') }}">
                                 <i class="ti-shopping-cart"></i>
                                 <span class="shop-count-furniture green">{{ Cart::count() }}</span>
-                            </a>
-                            <!-- @if (Cart::count() > 0)
-                                <ul class="cart-dropdown">
-                                    @foreach (Cart::content() as $item)
-                                        @php
-                                            $product = isset($item->model->parent) ? $item->model->parent : $item->model;
-                                            $image = !empty($product->productImages->first()) ? asset('storage/'.$product->productImages->first()->path) : asset('themes/ezone/assets/img/cart/3.jpg')
-                                        @endphp
-                                        <li class="single-product-cart">
-                                            <div class="cart-img">
-                                                <a href="{{ url('product/'. $product->slug) }}"><img src="{{ $image }}" alt="{{ $product->name }}" style="width:100px"></a>
-                                            </div>
-                                            <div class="cart-title">
-                                                <h5><a href="{{ url('product/'. $product->slug) }}">{{ $item->name }}</a></h5>
-                                                <span>{{ number_format($item->price) }} x {{ $item->quantity }}</span>
-                                            </div>
-                                            <div class="cart-delete">
-                                                <a href="{{ url('carts/remove/'. $item->id)}}" class="delete"><i class="ti-trash"></i></a>
-                                            </div>
-                                        </li>
-                                    @endforeach
-                                    <li class="cart-space">
-                                        <div class="cart-sub">
-                                            <h4>Subtotal</h4>
-                                        </div>
-                                        <div class="cart-price">
-                                            <h4>{{ Cart::subtotal() }}</h4>
-                                        </div>
-                                    </li>
-                                    <li class="cart-btn-wrapper">
-                                        <a class="cart-btn btn-hover" href="{{ url('carts') }}">view cart</a>
-                                        <a class="cart-btn btn-hover" href="{{ url('orders/checkout') }}">checkout</a>
-                                    </li>
-                                </ul>
-                            @endif -->
+                            </a>    
                         </div>
                     </div>
                     <div class="row">
@@ -169,60 +81,26 @@
                                 <nav id="mobile-menu-active">
                                     <ul class="menu-overflow">
                                         <li><a href="#">HOME</a>
-                                            <ul>
-                                                <li><a href="index.html">Fashion</a></li>
-                                                <li><a href="index-fashion-2.html">Fashion style 2</a></li>
-                                                <li><a href="index-fruits.html">Fruits</a></li>
-                                                <li><a href="index-book.html">book</a></li>
-                                                <li><a href="index-electronics.html">electronics</a></li>
-                                                <li><a href="index-electronics-2.html">electronics style 2</a></li>
-                                                <li><a href="index-food.html">food & drink</a></li>
-                                                <li><a href="index-furniture.html">furniture</a></li>
-                                                <li><a href="index-handicraft.html">handicraft</a></li>
-                                                <li><a href="index-smart-watch.html">smart watch</a></li>
-                                                <li><a href="index-sports.html">sports</a></li>
-                                            </ul>
+                                            
                                         </li>
                                         <li><a href="#">pages</a>
                                             <ul>
-                                                <li><a href="about-us.html">about us</a></li>
-                                                <li><a href="menu-list.html">menu list</a></li>
-                                                <li><a href="login.html">login</a></li>
-                                                <li><a href="register.html">register</a></li>
-                                                <li><a href="cart.html">cart page</a></li>
-                                                <li><a href="checkout.html">checkout</a></li>
-                                                <li><a href="wishlist.html">wishlist</a></li>
-                                                <li><a href="contact.html">contact</a></li>
+                                                <ul class="single-dropdown">
+                                            
+                                            <li><a href="{{ url('products') }}">Products</a></li>
+                                            <li><a href="{{ url('login') }}">login</a></li>
+                                            <li><a href="{{ url('register') }}">register</a></li>
+                                            <li><a href="{{ url('carts') }}">cart page</a></li>
+                                            <li><a href="{{ url('wishlists') }}">wishlist</a></li>
+                                            
+                                        </ul>
                                             </ul>
                                         </li>
-                                        <li><a href="#">shop</a>
-                                            <ul>
-                                                <li><a href="shop-grid-2-col.html"> grid 2 column</a></li>
-                                                <li><a href="shop-grid-3-col.html"> grid 3 column</a></li>
-                                                <li><a href="shop.html">grid 4 column</a></li>
-                                                <li><a href="shop-grid-box.html">grid box style</a></li>
-                                                <li><a href="shop-list-1-col.html"> list 1 column</a></li>
-                                                <li><a href="shop-list-2-col.html">list 2 column</a></li>
-                                                <li><a href="shop-list-box.html">list box style</a></li>
-                                                <li><a href="product-details.html">tab style 1</a></li>
-                                                <li><a href="product-details-2.html">tab style 2</a></li>
-                                                <li><a href="product-details-3.html"> tab style 3</a></li>
-                                                <li><a href="product-details-4.html">sticky style</a></li>
-                                                <li><a href="product-details-5.html">sticky style 2</a></li>
-                                                <li><a href="product-details-6.html">gallery style</a></li>
-                                                <li><a href="product-details-7.html">gallery style 2</a></li>
-                                                <li><a href="product-details-8.html">fixed image style</a></li>
-                                                <li><a href="product-details-9.html">fixed image style 2</a></li>
-                                            </ul>
+                                        <li><a href="{{ url('products') }}">shop</a>
+                                           
                                         </li>
                                         <li><a href="#">BLOG</a>
-                                            <ul>
-                                                <li><a href="blog.html">blog 3 colunm</a></li>
-                                                <li><a href="blog-2-col.html">blog 2 colunm</a></li>
-                                                <li><a href="blog-sidebar.html">blog sidebar</a></li>
-                                                <li><a href="blog-details.html">blog details</a></li>
-                                                <li><a href="blog-details-sidebar.html">blog details 2</a></li>
-                                            </ul>
+                                            
                                         </li>
                                         <li><a href="contact.html"> Contact  </a></li>
                                     </ul>
@@ -284,7 +162,7 @@
                             <img src="{{ asset('themes/ezone/assets/img/icon-img/26.png') }}" alt="">
                         </div>
                         <div class="services-content">
-                            <h4>Free Shippig</h4>
+                            <h4>Free Shipping</h4>
                             <p>Contrary to popular belief, Lorem Ipsum is random text. </p>
                         </div>
                     </div>
@@ -317,7 +195,7 @@
                 <div class="container-fluid">
                     <div class="widget-wrapper">
                         <div class="footer-widget mb-30">
-                            <a href="#"><img src="{{ asset('themes/ezone/assets/img/logo/2.png') }}" alt=""></a>
+                            <!-- <a href="#"><img src="{{ asset('themes/ezone/assets/img/logo/2.png') }}" alt=""></a> -->
                             <div class="footer-about-2">
                                 <p>There are many variations of passages of Lorem Ipsum <br>the majority have suffered alteration in some form, by <br> injected humour</p>
                             </div>
@@ -424,44 +302,7 @@
                             </div>
                         </div>
                         <div class="qwick-view-right">
-                            <div class="qwick-view-content">
-                                <h3>Handcrafted Supper Mug</h3>
-                                <div class="price">
-                                    <span class="new">$90.00</span>
-                                    <span class="old">$120.00  </span>
-                                </div>
-                                <div class="rating-number">
-                                    <div class="quick-view-rating">
-                                        <i class="pe-7s-star"></i>
-                                        <i class="pe-7s-star"></i>
-                                        <i class="pe-7s-star"></i>
-                                        <i class="pe-7s-star"></i>
-                                        <i class="pe-7s-star"></i>
-                                    </div>
-                                    <div class="quick-view-number">
-                                        <span>2 Ratting (S)</span>
-                                    </div>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adip elit, sed do tempor incididun ut labore et dolore magna aliqua. Ut enim ad mi , quis nostrud veniam exercitation .</p>
-                                <div class="quick-view-select">
-                                    <div class="select-option-part">
-                                        <label>Size*</label>
-                                        <select class="select">
-                                            <option value="">- Please Select -</option>
-                                            <option value="">900</option>
-                                            <option value="">700</option>
-                                        </select>
-                                    </div>
-                                    <div class="select-option-part">
-                                        <label>Color*</label>
-                                        <select class="select">
-                                            <option value="">- Please Select -</option>
-                                            <option value="">orange</option>
-                                            <option value="">pink</option>
-                                            <option value="">yellow</option>
-                                        </select>
-                                    </div>
-                                </div>
+                            
                                 <div class="quickview-plus-minus">
                                     <div class="cart-plus-minus">
                                         <input type="text" value="02" name="qtybutton" class="cart-plus-minus-box">
@@ -473,7 +314,7 @@
                                         <a class="btn-hover" href="#"><i class="pe-7s-like"></i></a>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

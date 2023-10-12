@@ -8,7 +8,7 @@
                     <div class="single-slider-4 slider-height-6 bg-img" style="background-image: url({{ Storage::url($slide->path) }})">
                         <div class="container">
                             <div class="row">
-                                <div class="ml-auto col-lg-6">
+                                <div class="ml-auto col-lg-4">
                                     <div class="furniture-content fadeinup-animated">
                                         <h2 class="animated">{{ $slide->title }}</h2>
                                         <p class="animated">{{ $slide->body }}</p>
@@ -29,7 +29,7 @@
 		<div class="container-fluid">
 			<div class="section-title-6 text-center mb-50">
 				<h2>Popular Product</h2>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+				<p>Daftar Produk Populer</p>
 			</div>
 			<div class="product-style">
 				<div class="popular-product-active owl-carousel">

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>bvc</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="{{ asset('css/fontawesome.min.css') }}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('css/adminlte.min.css') }}">
+    @laravelPWA
     @stack('style-alt')
+    
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">

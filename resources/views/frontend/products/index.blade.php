@@ -6,7 +6,7 @@
 			<div class="breadcrumb-content text-center">
 				<h2>shop grid 3 column</h2>
 				<ul>
-					<li><a href="#">home</a></li>
+					<li><a href="/">home</a></li>
 					<li>shop grid 3 column</li>
 				</ul>
 			</div>

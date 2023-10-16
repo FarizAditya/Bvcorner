@@ -131,11 +131,11 @@
 						<div class="product-details-cati-tag mtb-10">
 							<ul>
 								<li class="categories-title">Tags :</li>
-								<li><a href="#">fashion</a></li>
-								<li><a href="#">electronics</a></li>
-								<li><a href="#">toys</a></li>
-								<li><a href="#">food</a></li>
-								<li><a href="#">jewellery</a></li>
+								<li><a href="#">Atomizer</a></li>
+								<li><a href="#">Device</a></li>
+								<li><a href="#">Battery</a></li>
+								<li><a href="#">Liquid</a></li>
+								
 							</ul>
 						</div>
 						<div class="product-share">

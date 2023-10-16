@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicon -->
-        <!-- <link rel="shortcut icon" type="image/x-icon" href="{{ asset('themes/ezone/assets/img/favicon.png') }}"> -->
+        <link rel="shortcut icon" type="image/x-icon" href="{{ asset('themes/ezone/assets/img/favicon.png') }}">
 		
 		<!-- all css here -->
         <link rel="stylesheet" href="{{ asset('themes/ezone/assets/css/bootstrap.min.css') }}">
@@ -56,15 +56,12 @@
                                             <li><a href="{{ url('register') }}">register</a></li>
                                             <li><a href="{{ url('carts') }}">cart page</a></li>
                                             <li><a href="{{ url('wishlists') }}">wishlist</a></li>
-                                            <li><a href="contact.html">contact</a></li>
+                                            
                                         </ul>
                                     </li>
                                     <li><a href="{{ url('products') }}">shop</a>
                                         
-                                    </li>
-                                    <li><a href="blog.html">blog</a>                                       
-                                    </li>
-                                    <li><a href="contact.html">contact</a></li>
+                                    
                                 </ul>
                             </nav>
                         </div>
@@ -98,11 +95,7 @@
                                         </li>
                                         <li><a href="{{ url('products') }}">shop</a>
                                            
-                                        </li>
-                                        <li><a href="#">BLOG</a>
-                                            
-                                        </li>
-                                        <li><a href="contact.html"> Contact  </a></li>
+                                        
                                     </ul>
                                 </nav>							
                             </div>
@@ -154,7 +147,7 @@
         @yield('content')
        
         <!-- services -->
-        <div class="services-area wrapper-padding-4 gray-bg pt-120 pb-80">
+        <!-- <div class="services-area wrapper-padding-4 gray-bg pt-120 pb-80">
             <div class="container-fluid">
                 <div class="services-wrapper">
                     <div class="single-services mb-40">
@@ -186,7 +179,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- end -->
 
         <!-- footer -->
@@ -195,9 +188,9 @@
                 <div class="container-fluid">
                     <div class="widget-wrapper">
                         <div class="footer-widget mb-30">
-                            <!-- <a href="#"><img src="{{ asset('themes/ezone/assets/img/logo/2.png') }}" alt=""></a> -->
+                            <a href="#"><img src="{{ asset('themes/ezone/assets/img/logo/2.png') }}" alt=""></a>
                             <div class="footer-about-2">
-                                <p>There are many variations of passages of Lorem Ipsum <br>the majority have suffered alteration in some form, by <br> injected humour</p>
+                                <p>BARISS VAPE CORNER adalah salah satu vape store di Purworejo <br>Bariss Vaper Corner ada di tiga kecamatan dikabutapen Purworejo,<br> Kutoarjo dan Purwodadi</p>
                             </div>
                         </div>
                         <div class="footer-widget mb-30">
@@ -208,7 +201,7 @@
                                         <span>Address: </span>
                                     </div>
                                     <div class="footer-info-content3">
-                                        <p>66 Sipu road Rampura Banasree <br>USA- 10800</p>
+                                        <p>Jl. Grabag-Ngombol,Grabag, Purworejo <br>54265</p>
                                     </div>
                                 </div>
                                 <div class="footer-address-furniture">
@@ -216,7 +209,7 @@
                                         <span>Phone: </span>
                                     </div>
                                     <div class="footer-info-content3">
-                                        <p>+8801 (33) 515609735 <br>+8801 (66) 223352333</p>
+                                        <p>+62896-8527-1513</p>
                                     </div>
                                 </div>
                                 <div class="footer-address-furniture">
@@ -224,7 +217,7 @@
                                         <span>E-mail: </span>
                                     </div>
                                     <div class="footer-info-content3">
-                                        <p><a href="#"> email@domain.com</a> <br><a href="#"> domain@mail.info</a></p>
+                                        <p><a href="#">barissvapecorner@gmail.com</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -275,7 +268,7 @@
             <div class="modal-dialog modal-quickview-width" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <div class="qwick-view-left">
+                        <div class="quick-view-left">
                             <div class="quick-view-learg-img">
                                 <div class="quick-view-tab-content tab-content">
                                     <div class="tab-pane active show fade" id="modal1" role="tabpanel">
@@ -301,7 +294,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="qwick-view-right">
+                        <div class="quick-view-right">
                             
                                 <div class="quickview-plus-minus">
                                     <div class="cart-plus-minus">

@@ -49,7 +49,7 @@
                             </div>
                         @endif
                         
-                        @if ($colors)
+                        <!-- @if ($colors)
                             <div class="sidebar-widget sidebar-overflow mb-45">
                                 <h3 class="sidebar-title">color</h3>
                                 <div class="sidebar-categories">
@@ -73,7 +73,7 @@
                                     </ul>
                                 </div>
                             </div>
-                        @endif
+                        @endif -->
                     </div>
                     <!-- end -->
 				</div>
@@ -122,7 +122,7 @@
                                                             @endif
                                                         </a>
                                                         <span>hot</span>
-                                                        <div class="product-action">
+                                                        <!-- <div class="product-action">
                                                             <a class="animate-left add-to-fav" title="Favorite"  product-slug="{{ $product->slug }}" href="">
                                                                 <i class="pe-7s-like"></i>
                                                             </a>
@@ -132,7 +132,7 @@
                                                             <a class="animate-right quick-view" data-toggle="modal" data-target="#exampleModal" title="Quick View" product-slug="{{ $product->slug }}" href="">
                                                                 <i class="pe-7s-look"></i>
                                                             </a>
-                                                        </div>
+                                                        </div> -->
                                                     </div>
                                                     <div class="product-content">
                                                         <h4><a href="{{ url('product/'. $product->slug) }}">{{ $product->name }}</a></h4>

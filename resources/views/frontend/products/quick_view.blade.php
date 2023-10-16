@@ -4,7 +4,7 @@
 <div class="modal-dialog modal-quickview-width" role="document">
 	<div class="modal-content">
 		<div class="modal-body">
-			<div class="qwick-view-left">
+			<div class="quick-view-left">
 				<div class="quick-view-learg-img">
 					<div class="quick-view-tab-content tab-content">
 						@php
@@ -42,8 +42,8 @@
 					@endforeach
 				</div>
 			</div>
-			<div class="qwick-view-right">
-				<div class="qwick-view-content">
+			<div class="quick-view-right">
+				<div class="quick-view-content">
 					<h3>{{ $product->name }}</h3>
 					<div class="price">
 						<span class="new">{{ number_format($product->priceLabel()) }}</span>

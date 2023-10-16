@@ -5,7 +5,7 @@
         <div class="slider-area">
             <div class="slider-active owl-carousel">
                 @foreach($slides as $slide)
-                    <div class="single-slider-4 slider-height-6 bg-img" style="background-image: url({{ Storage::url($slide->path) }})">
+                    <div class="single-slider-4 slider-height-4 bg-img" style="background-image: url({{ Storage::url($slide->path) }})">
                         <div class="container">
                             <div class="row">
                                 <div class="ml-auto col-lg-4">
@@ -46,17 +46,17 @@
 										<img src="{{ asset('themes/ezone/assets/img/product/fashion-colorful/1.jpg') }}" alt="{{ $product->name }}">
 									@endif
 								</a>
-								<div class="product-action">
+								<!-- <div class="product-action">
 									<a class="animate-left add-to-fav" title="Wishlist"  product-slug="{{ $product->slug }}" href="">
 										<i class="pe-7s-like"></i>
 									</a>
 									<a class="animate-top add-to-card" title="Add To Cart" href="" product-id="{{ $product->id }}" product-type="{{ $product->type }}" product-slug="{{ $product->slug }}">
 										<i class="pe-7s-cart"></i>
 									</a>
-									<a class="animate-right quick-view" title="Quick View" product-slug="{{ $product->slug }}" href="">
+									<a class="animate-right quick-view" title="Quick View" product-slug="{{ $product->slug }}" href="{{ url('product/'. $product->slug) }}">
 										<i class="pe-7s-look"></i>
 									</a>
-								</div>
+								</div> -->
 							</div>
 							<div class="funiture-product-content text-center">
 								<h4><a href="{{ url('product/'. $product->slug) }}">{{ $product->name }}</a></h4>
